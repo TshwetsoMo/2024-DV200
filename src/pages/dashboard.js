@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './dashboard.css';
 import SearchBar from '../components/Search';
+import icon1 from '../icons/Group 1 (1).png';
+import icon2 from '../icons/Group 2 (1).png';
+import icon3 from '../icons/Group 3.png';
 
 function Dashboard() {
   return (
@@ -13,13 +16,16 @@ function Dashboard() {
         </header><br/><br/>
         <div className="dashboard-navigation">
             <Link to="/search" className="dashboard-navigation-item">
-            Search
+                <img src={icon1} alt="Search" style={{ width: '150px', height: '150px' }} />
+                Search
             </Link>
             <Link to="/compare" className="dashboard-navigation-item">
-            Compare
+                <img src={icon2} alt="Compare" style={{ width: '150px', height: '150px' }}/>
+                Compare
             </Link>
             <Link to="/timeline" className="dashboard-navigation-item">
-            Timeline
+                <img src={icon3} alt="Timeline" style={{ width: '150px', height: '150px' }}/>
+                Timeline
             </Link>
         </div><br/><br/>
         <h2 className='h2'>Search for a Movie</h2>

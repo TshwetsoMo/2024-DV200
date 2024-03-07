@@ -1,36 +1,53 @@
 .compare {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.compare-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.search-bars {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.charts {
-  display: flex;
-  justify-content: space-between;
-}
-
-.chart {
-  width: 30%;
-}
-
-@media (max-width: 768px) {
-  .charts {
-    flex-direction: column;
+    max-width: 800px;
+    max-height: fit-content;
+    margin: 0 auto;
+    padding: 20px;
   }
-
-  .chart {
-    width: 100%;
+  
+  .compare-header {
+    text-align: center;
     margin-bottom: 20px;
   }
-}
+  
+  .search-bars {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .charts {
+    display: flex;
+    flex-wrap: wrap; /* Allow charts to wrap to the next row */
+    justify-content: space-between;
+  }
+  
+  .chart {
+    width: 30%;
+    margin-bottom: 20px; /* Add margin between charts */
+  }
+
+  .stats{
+    width: max-content;
+    height: max-content;
+    padding: 10px 10px 10px 10px;
+    background-color: black;
+    border: solid black 3px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .button{
+    border: solid skyblue 3px;
+    padding: 5px 5px 5px 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .charts {
+      flex-direction: column;
+    }
+  
+    .chart {
+      width: 100%; /* Make charts take full width on smaller screens */
+    }
+  }
