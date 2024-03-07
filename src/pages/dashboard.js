@@ -16,15 +16,15 @@ function Dashboard() {
         </header><br/><br/>
         <div className="dashboard-navigation">
             <Link to="/search" className="dashboard-navigation-item">
-                <img src={icon1} alt="Search" style={{ width: '150px', height: '150px' }} />
+                <img src={icon1} alt="Search" style={{ width: '150px', height: '150px' }} /><br/>
                 Search
             </Link>
             <Link to="/compare" className="dashboard-navigation-item">
-                <img src={icon2} alt="Compare" style={{ width: '150px', height: '150px' }}/>
+                <img src={icon2} alt="Compare" style={{ width: '150px', height: '150px' }}/><br/>
                 Compare
             </Link>
             <Link to="/timeline" className="dashboard-navigation-item">
-                <img src={icon3} alt="Timeline" style={{ width: '150px', height: '150px' }}/>
+                <img src={icon3} alt="Timeline" style={{ width: '150px', height: '150px' }}/><br/>
                 Timeline
             </Link>
         </div><br/><br/>
