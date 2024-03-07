@@ -1,0 +1,36 @@
+.compare {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.compare-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-bars {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.charts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chart {
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .charts {
+    flex-direction: column;
+  }
+
+  .chart {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
