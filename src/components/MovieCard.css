@@ -1,0 +1,15 @@
+.movie-card {
+  width: 200px;
+  height: 250px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.plot {
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
