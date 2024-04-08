@@ -1,0 +1,64 @@
+.timeline-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-left: 250px;
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.timeline-chart {
+  width: 80%;
+  max-width: 800px;
+  height: 400px;
+  margin-top: 20px;
+  position: relative;
+  background-color: #333;  
+}
+
+.timeline-chart canvas {
+  width: 100% !important;
+  height: 100% !important;
+  color: white;
+}
+
+.timeline-chart .chartjs-tooltip {
+  background: rgba(255, 255, 255, 0.8);
+  color: white;
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 10px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.timeline-chart:hover .chartjs-tooltip {
+  opacity: 1;
+}

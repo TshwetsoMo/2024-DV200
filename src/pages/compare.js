@@ -26,22 +26,27 @@ const Compare = () => {
 
   return (
     <div className="movie-comparison-page">
-      <div className="search-fields">
-        <input type="text" placeholder="Enter movie 1" value={movie1} onChange={(e) => setMovie1(e.target.value)} />
-        <input type="text" placeholder="Enter movie 2" value={movie2} onChange={(e) => setMovie2(e.target.value)} />
-        <button onClick={handleSearch}>Search</button>
-      </div><br/>
-      <div className="chart-container">
-        <h2>Bar Chart</h2>
-        <BarChart movieData={movieData} />
+      <div className='section1'>
+        <div className="search-fields">
+          <input type="text" placeholder="Enter movie 1" value={movie1} onChange={(e) => setMovie1(e.target.value)} />
+          <input type="text" placeholder="Enter movie 2" value={movie2} onChange={(e) => setMovie2(e.target.value)} />
+          <button onClick={handleSearch}>Search</button><br></br>
+          <p>Make sure your spelling is correct!!!</p>
+        </div>
       </div>
-      <div className="chart-container">
-        <h2>Pie Chart</h2>
-        <PieChart movieData={movieData} /><br></br><br></br>
-      </div><br/>
-      <div className="chart-container">
-        <h2>Radar Chart</h2>
-        <RadarChart movieData={movieData} />
+      <div className='section2'>
+        <div className="chart-container">
+          <h2>Bar Chart</h2>
+          <BarChart movieData={movieData} />
+        </div>
+        <div className="chart-container">
+          <h2>Pie Chart</h2>
+          <PieChart movieData={movieData} />
+        </div>
+        <div className="chart-container">
+          <h2>Radar Chart</h2>
+          <RadarChart movieData={movieData} />
+        </div>
       </div>
     </div>
   );

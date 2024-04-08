@@ -7,19 +7,24 @@ const PieChart = ({ movieData }) => {
   }
 
   const data = {
-    labels: ['Rating'],
+    labels: [movieData.movie2.Title, movieData.movie1.Title],
     datasets: [
       {
         data: [
-          movieData.movie2.imdbRating,
-          movieData.movie1.imdbRating,
+          parseFloat(movieData.movie2.imdbRating),
+          parseFloat(movieData.movie1.imdbRating),
         ],
         backgroundColor: ['rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)'],
       },
     ],
   };
 
-  return <Pie data={data} />;
+  const options = {
+    responsive: true,
+    // maintainAspectRatio: false, // Try removing or commenting out this line
+  };
+
+  return <Pie data={data} options={options} />;
 };
 
 export default PieChart;

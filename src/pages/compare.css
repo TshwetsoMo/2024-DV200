@@ -1,17 +1,35 @@
 .movie-comparison-page {
-  display: flex;
-  height:1500px;
-  
+  min-height: 100vh;
+  margin-left: 250px;
 }
 
 .chart-container {
-  width: 600px;
-  height: 700px;
+  width: 30%;
   margin: 20px;
   padding: 20px;
   border: 1px solid #ccc;
+  background-color: black;
+}
+
+.chart-container h2 {
+  color: white;
 }
 
 .search-fields {
   margin-top: 20px;
+  margin-right: 200px;
+}
+
+.section1{
+  height: 100px;
+  width: 100%;
+  align-items: left;
+  padding-left: 250px;
+  padding-top: 45px;
+}
+
+.section2{
+  width: 100%;
+  height: max-content;
+  display: flex;
 }

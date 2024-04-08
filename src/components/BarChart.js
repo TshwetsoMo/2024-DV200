@@ -5,11 +5,10 @@ const BarChart = ({ movieData }) => {
   if (!movieData || !movieData.movie1 || !movieData.movie2) {
     return null;
   }
-  
 
-  const labels = ['Metascore', 'Runtime', 'Rating'];
-  const movie1Data = [ movieData.movie1.Metascore, movieData.movie1.Runtime, movieData.movie1.imdbRating];
-  const movie2Data = [movieData.movie2.Metascore, movieData.movie2.Runtime, movieData.movie2.imdbRating];
+  const labels = ['Metascore', 'Runtime', 'IMDB Rating'];
+  const movie1Data = [parseFloat(movieData.movie1.Metascore), parseInt(movieData.movie1.Runtime), parseFloat(movieData.movie1.imdbRating)];
+  const movie2Data = [parseFloat(movieData.movie2.Metascore), parseInt(movieData.movie2.Runtime), parseFloat(movieData.movie2.imdbRating)];
 
   const data = {
     labels: labels,
@@ -28,6 +27,7 @@ const BarChart = ({ movieData }) => {
   };
 
   const options = {
+    responsive: true,
     scales: {
       y: {
         beginAtZero: true,

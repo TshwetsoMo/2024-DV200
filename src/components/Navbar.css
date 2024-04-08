@@ -1,4 +1,44 @@
-.navbar {
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 90vh;
+  width: 200px;
+  background-color: #333;
+  padding: 20px;
+}
+
+.sidebar-brand img {
+  display: block;
+  margin: 0 auto;
+}
+
+.sidebar-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.sidebar-item {
+  margin-bottom: 10px;
+}
+
+.sidebar-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.sidebar-link:hover {
+  background-color: #555;
+}
+
+#movie{
+  display: none;
+}
+
+/* .navbar {
   background-color: black;
   border-bottom: #333 solid 4px;
   color: white;
@@ -9,6 +49,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
 }
 
 .navbar-logo img {
@@ -42,4 +83,4 @@
 
 .navbar-link:hover {
   color: #f0f0f0;
-}
+} */

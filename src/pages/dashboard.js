@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { Card } from 'react-bootstrap';
 import LatestMovies from '../components/LatestMovies';
-import Movies from '../components/Movies';
+import Movie from '../pages/movie';
 import MovieCard from '../components/MovieCard';
 import SearchBar from '../components/Search';
 import icon1 from '../icons/Group 1 (1).png';

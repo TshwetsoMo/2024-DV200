@@ -1,0 +1,13 @@
+.mcontainer {
+    background-image: url(../icons/Black\ Typography\ Error\ T-Shirt.png);
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    margin-left: 200px;
+  }
